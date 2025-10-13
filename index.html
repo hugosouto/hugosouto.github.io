@@ -33,6 +33,59 @@
 			max-width: 100%;
 			height: auto;
 		}
+		
+		/* Work Section Infographic Styles */
+		.impact-stats {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+			gap: 20px;
+			margin: 2em 0;
+			text-align: center;
+		}
+		.stat-box {
+			background: rgba(255, 255, 255, 0.05);
+			border: 2px solid rgba(255, 255, 255, 0.1);
+			border-radius: 8px;
+			padding: 1.5em 1em;
+			transition: all 0.3s ease;
+		}
+		.stat-box:hover {
+			background: rgba(255, 255, 255, 0.08);
+			border-color: rgba(255, 255, 255, 0.2);
+			transform: translateY(-5px);
+		}
+		.stat-number {
+			display: block;
+			font-size: 2.5em;
+			font-weight: bold;
+			color: #ffffff;
+			line-height: 1;
+			margin-bottom: 0.3em;
+			text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+		}
+		.stat-label {
+			display: block;
+			font-size: 0.85em;
+			color: rgba(255, 255, 255, 0.7);
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			line-height: 1.4;
+		}
+		.work-item {
+			margin-bottom: 2em;
+			padding: 1.5em;
+			background: rgba(255, 255, 255, 0.02);
+			border-left: 3px solid rgba(255, 255, 255, 0.1);
+			transition: all 0.3s ease;
+		}
+		.work-item:hover {
+			background: rgba(255, 255, 255, 0.05);
+			border-left-color: rgba(255, 255, 255, 0.3);
+		}
+		.work-title {
+			margin-bottom: 0.5em;
+			color: #ffffff;
+		}
 	</style>
 	<body class="is-preload">
 
@@ -75,9 +128,9 @@
 								<!-- <span class="image main"><img src="assets/img/pic01.jpg" alt="" /></span> -->
 								<p>Hi, I'm Hugo Souto, an AI Solution Engineer and Coordinator at the Ministry of Management and Innovation (MGI), Secretariat of Digital Government, Federal Government of Brazil. I'm a researcher-practitioner with over 7 years of experience in the data science lifecycle, specializing in designing complex machine learning, deep learning, and generative AI architectures.</p>
 
-								<p>I lead the development of Brazil's national AI Platform as part of the Brazilian Artificial Intelligence Plan (PBIA), building systems that serve over 200 million citizens. My work combines systems thinking with hands-on technical implementation, bridging organizational understanding with delivery capability at government scale.</p>
+								<p>I lead the development of Brazil's national AI Platform as part of the Brazilian Artificial Intelligence Plan (PBIA), building systems that will serve over 170 million citizens. My work combines systems thinking with hands-on technical implementation, bridging organizational understanding with delivery capability at government scale.</p>
 
-								<p>With a solid foundation in management, innovation, and organizational learning (MSc in Learning Organizations + MBA in Innovation), I've proven ability to lead complex projects and present technical solutions to top management—from directorate to presidential levels. I act as a consultant in AI solution prospecting for various Federal Government agencies and interface with startups, technology companies, and research institutions for project execution.</p>
+								<p>With a solid foundation in management, innovation, and organizational learning (MSc in Learning Organizations + MBA in Innovation), I've proven ability to lead complex projects and present technical solutions to top management. I act as a consultant in AI solution prospecting for various Federal Government agencies and interface with startups, technology companies, and research institutions for project execution.</p>
 
 								<p>Previously, I worked as a Senior Data Scientist and Product Owner at ComprasGov, where I created the ComprasGov Insights platform—an ML-based analytics system analyzing decisions on a platform that processed over US$120 billion in purchases over five years. I'm also a former long-distance triathlete, committed to bringing the same focus and discipline to AI development.</p>
 
@@ -88,37 +141,56 @@
 						<article id="work">
 							<h2 class="major">Work</h2>
 
+							<div class="impact-stats">
+								<div class="stat-box">
+									<span class="stat-number">170M+</span>
+									<span class="stat-label">Citizens Reached</span>
+								</div>
+								<div class="stat-box">
+									<span class="stat-number">$18M</span>
+									<span class="stat-label">Research Contract</span>
+								</div>
+								<div class="stat-box">
+									<span class="stat-number">2</span>
+									<span class="stat-label">National-Scale AI Systems In Production</span>
+								</div>
+								<div class="stat-box">
+									<span class="stat-number">7+</span>
+									<span class="stat-label">Years of Experience on ML and AI</span>
+								</div>
+							</div>
+
 							<h3>Current Projects</h3>
 
 							<section class="work-item">
-								<h4 class="work-title">Federal Government AI Platform</h4>
-								<p>Leading the development of Brazil's national AI Platform as part of the Brazilian Artificial Intelligence Plan (PBIA). Architecting scalable, secure infrastructure for multi-agent chatbot systems serving 200+ million citizens through GOV.BR services.</p>
+								<h4 class="work-title">🇧🇷 Federal Government AI Platform</h4>
+								<p>Leading the development of Brazil's national AI Platform as part of the Brazilian Artificial Intelligence Plan (PBIA). Architecting scalable, secure infrastructure for multi-agent chatbot systems serving <strong>170+ million citizens</strong> through GOV.BR services.</p>
 							</section>
 
 							<section class="work-item">
-								<h4 class="work-title">AI Factory Initiative</h4>
-								<p>Coordinating a significant portion of a 390M BRL (~$78M USD) CPQD research contract to deliver an "AI Factory" by 2026—an autonomous, agent-based research platform for mining government data and prototyping AI solutions at national scale.</p>
+								<h4 class="work-title">🏭 AI Factory Initiative</h4>
+								<p>Coordinating technical decisions on a <strong>90M BRL (~$18M USD)</strong> CPQD research contract to deliver, among other projects, an "AI Factory" by 2026—an autonomous, agent-based research platform for mining government data and prototyping AI solutions at national scale.</p>
 							</section>
 
 							<section class="work-item">
-								<h4 class="work-title">ComprasGov Insights</h4>
-								<p>Product Owner and lead developer of an ML-based analytics platform providing data science insights for Brazilian public procurement managers. The platform analyzes decisions on a system that processed over US$120 billion in purchases over five years, featuring advanced dashboards and predictive models for fraud detection and procurement optimization.</p>
+								<h4 class="work-title">📊 ComprasGov Insights</h4>
+								<p>Product Owner and lead developer of an ML-based analytics platform providing data science insights for Brazilian public procurement managers. The platform analyzes decisions on a system that processed over <strong>US$120 billion</strong> in purchases over five years, featuring advanced dashboards and predictive models for fraud detection and procurement optimization.</p>
 							</section>
 
 							<section class="work-item">
-								<h4 class="work-title">Multi-Agent Chatbot Ecosystem</h4>
+								<h4 class="work-title">🤖 Multi-Agent Chatbot Ecosystem</h4>
 								<p>Designing and implementing generative AI chatbot systems with advanced RAG (Retrieval-Augmented Generation) capabilities, multi-agent orchestration, and integration with national identity platforms for citizen services.</p>
 							</section>
 
 							<h3>Open Source & Technical Projects</h3>
 
 							<section class="work-item">
-								<h4 class="work-title"><a href="https://github.com/hugosouto/comprasgov-daas-sql-queries">ComprasGov DaaS SQL Queries</a></h4>
+								<h4 class="work-title">💾 <a href="https://github.com/hugosouto/comprasgov-daas-sql-queries">ComprasGov DaaS SQL Queries</a></h4>
 								<p>Repository of optimized SQL queries for ComprasGov systems' databases, demonstrating data engineering expertise with large-scale government data.</p>
 							</section>
 
 							<section class="work-item">
-								<h4 class="work-title"><a href="https://github.com/hugosouto/azure-comprasgov-poc-desert-item">Azure ML POC - Procurement Prediction</a></h4>
+								<h4 class="work-title">☁️ <a href="https://github.com/hugosouto/azure-comprasgov-poc-desert-item">Azure ML POC - Procurement Prediction</a></h4>
 								<p>End-to-end ML pipeline using Azure AutoML for predicting bidding item registrations, including data transformations, feature engineering, and model deployment.</p>
 							</section>
 						</article>
@@ -136,7 +208,7 @@
 								<li>🤖 7+ years in data science lifecycle, specializing in ML, Deep Learning, and Generative AI architectures with systemic vision integrating business, client, and user needs</li>
 								<li>🏛️ Product Owner and lead developer of multiple government-scale AI projects, including ComprasGov Insights (analyzing US$120B+ in procurement)</li>
 								<li>🌎 International AI consultant for government projects (Costa Rica - CLAD partnership) and World Bank Government Analytics Fellowship nominee</li>
-								<li>💰 Coordinator of significant portion of 390M BRL (~$78M USD) CPQD research contract for AI Factory development</li>
+								<li>💰 Coordinator of 90M BRL (~$18M USD) CPQD research contract for AI Factory developmentm, among other projects</li>
 								<li>🎓 MSc in Learning Organizations at <a href="https://www.ufpb.br/">UFPB</a> with Data Science research + MBA in Innovation at <a href="https://portal.ufcg.edu.br/">UFCG</a>/<a href="https://www.paqtc.org.br/">PaqTcPB</a></li>
 								<li>🎯 Proven ability to lead complex projects and present technical solutions to top management (directorate, secretariat, ministerial, and presidential levels)</li>
 							</ul>
